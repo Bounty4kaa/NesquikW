@@ -1,0 +1,110 @@
+body {    font-family: 'Poppins', Arial, sans-serif; /* Используем Poppins как основной, если он не доступен — Arial */
+    background-color: #fafafa; /* Светло-серый фон страницы */    display: flex;
+    flex-direction: column; /* Вертикальная ориентация содержимого */    align-items: center; /* Горизонтальное центрирование содержимого */
+    justify-content: flex-start; /* Верхнее выравнивание содержимого */    height: 100vh; /* Высота экрана равна 100% */
+    margin: 0; /* Убираем стандартные отступы */    padding-top: 40px; /* Отступ сверху для пространства */
+}
+/* Основной контейнер, объединяющий все элементы */.main-container {
+    display: flex;    flex-direction: column;
+    align-items: center;    justify-content: center;
+}
+/* Контейнер для логин-формы */.login-container {
+    background-color: #fff; /* Белый фон для формы */    border: 1px solid #dbdbdb; /* Серый тонкий бордюр */
+    padding: 40px; /* Внутренние отступы внутри контейнера */    border-radius: 8px; /* Скругленные углы контейнера */
+    text-align: center; /* Центрирование текста */    width: 350px; /* Фиксированная ширина формы */
+    margin-bottom: 20px; /* Отступ снизу */}
+/* Логотип Instagram */
+.logo {    margin-bottom: 20px; /* Отступ снизу от логотипа */
+    width: 175px; /* Фиксированная ширина логотипа */}
+/* Стили для формы */
+form {    display: flex;
+    flex-direction: column; /* Расположение элементов формы друг под другом */}
+/* Стили для полей ввода (логин, пароль) */
+input {    width: 100%; /* Поля ввода занимают всю ширину контейнера */
+    padding: 10px; /* Внутренние отступы */    margin-bottom: 10px; /* Отступ снизу между полями */
+    border: 1px solid #dbdbdb; /* Серый бордюр полей */    border-radius: 4px; /* Скругленные углы полей */
+    font-size: 16px; /* Размер шрифта */}
+/* Стили для кнопки отправки формы (логин) */
+button[type="submit"] {    background-color: #53bdeb; /* Голубой фон кнопки */
+    color: white; /* Белый цвет текста */    border: none; /* Без бордюра */
+    padding: 10px; /* Внутренние отступы */    border-radius: 4px; /* Скругленные углы */
+    cursor: pointer; /* Изменение курсора при наведении */    font-size: 16px; /* Размер текста */
+    margin-top: 10px; /* Отступ сверху */}
+/* Разделитель ИЛИ */
+.or-divider {    display: flex;
+    align-items: center; /* Вертикальное выравнивание текста */    justify-content: center; /* Центрирование содержимого */
+    color: #8e8e8e; /* Серый цвет текста */    font-size: 14px; /* Размер текста */
+    margin: 15px 0; /* Отступ сверху и снизу */}
+.or-divider span {
+    flex: 1; /* Элементы разделителя занимают равное пространство */    height: 1px; /* Высота разделительной линии */
+    background-color: #dbdbdb; /* Цвет разделительной линии */    margin: 0 10px; /* Отступы по бокам */
+}
+/* Стили для кнопки "Войти через Facebook" */.fb-login {
+    background-color: transparent; /* Прозрачный фон */    color: #385185; /* Цвет текста Facebook */
+    border: none; /* Без границы */    padding: 9px; /* Внутренние отступы */
+    cursor: pointer; /* Изменение курсора при наведении */    font-size: 15px; /* Размер текста */
+    font-weight: 600; /* Жирный шрифт для кнопки */    margin-top: 8px;
+    margin-bottom: 10px;    width: 100%; /* Кнопка занимает всю ширину */
+    display: flex;    justify-content: center; /* Горизонтальное центрирование содержимого */
+    align-items: center; /* Вертикальное выравнивание содержимого */    gap: 8px; /* Отступ между иконкой и текстом */
+    text-decoration: none; /* Убираем подчеркивание */    margin-left: -9px; /* Смещение влево */
+}
+/* Удаляем hover-эффект для кнопки Facebook */
+.fb-login:hover {    background-color: transparent; /* Прозрачный фон при наведении */
+}
+/* Стили для ссылки "Забыли пароль?" */.forgot-password {
+    display: block;    color: #00376b; /* Синий цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */    font-size: 14px; /* Размер текста */
+    margin-top: 10px; /* Отступ сверху */}
+/* Общие стили для всех текстовых параграфов */
+p {    font-size: 14px; /* Размер текста */
+}
+/* Блок для кнопок
+
+скачивания приложений */.app-download {
+    text-align: center;    margin-top: 20px;
+}
+/* Стили для кнопок скачивания (App Store и Google Play) */.app-buttons {
+    display: flex;    justify-content: center; /* Горизонтальное центрирование кнопок */
+    align-items: center; /* Вертикальное выравнивание */    gap: 10px; /* Отступ между кнопками */
+}
+.app-buttons img {    height: 40px; /* Высота иконок App Store и Google Play */
+    cursor: pointer; /* Изменение курсора при наведении */}
+/* Стили для футера */
+footer {    margin-top: 20px;
+    text-align: center; /* Центрирование текста */    font-size: 12px; /* Размер текста */
+    color: #8e8e8e; /* Светло-серый цвет текста */    line-height: 1.6; /* Интервал между строками */
+}
+/* Стили для навигации в футере */footer nav {
+    display: flex;    flex-wrap: wrap; /* Оборачивание ссылок при необходимости */
+    justify-content: center; /* Центрирование ссылок */    gap: 5px; /* Отступ между ссылками */
+}
+/* Стили для ссылок в футере */footer nav a {
+    color: #8e8e8e; /* Цвет текста */    margin: 0 5px; /* Отступы между ссылками */
+    text-decoration: none; /* Убираем подчеркивание */    font-size: 12px; /* Размер текста */
+}
+footer nav a:hover {    text-decoration: underline; /* Подчеркивание ссылок при наведении */
+}
+/* Стили для копирайта в футере */
+footer p {    margin-top: 10px;
+}
+/* Стили для выбора языка */.language-selector {
+    margin-right: 10px; /* Отступ справа */}
+/* Дополнительные стили для выбора языка в футере */
+footer .language-selector {    display: inline-block;
+    color: #8e8e8e; /* Цвет текста */    margin-right: 10px;
+    font-size: 12px;    cursor: pointer; /* Изменение курсора при наведении */
+}
+/* Стили для логотипа Instagram */.logo {
+    width: 242px; /* Ширина логотипа */    height: 70px; /* Высота логотипа */
+    margin-bottom: 20px; /* Отступ снизу */}
+/* Стили для дополнительных ссылок в футере */
+.extra-links {    margin-bottom: 10px; /* Отступ снизу перед копирайтом */
+    display: flex;    flex-direction: column;
+    align-items: center;    gap: 5px; /* Отступ между ссылками */
+}
+/* Стили для самих ссылок */.extra-link {
+    color: #8e8e8e; /* Цвет текста */    font-size: 12px; /* Размер текста */
+    text-decoration: none; /* Убираем подчеркивание */}
+.extra-link:hover {
+    text-decoration: underline; /* Добавляем подчеркивание при наведении */}
